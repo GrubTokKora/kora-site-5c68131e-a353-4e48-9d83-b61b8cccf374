@@ -1,30 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-IN" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The granios cafe – Casual Cafe in Nizamabad</title>
-    <meta name="description" content="Visit The granios cafe in Nizamabad for a delightful range of coffee, shakes, and fast food. A perfect spot for quick bites and casual gatherings.">
-    
+    <meta name="theme-color" content="#0c0d10">
+
+    <!-- Primary SEO -->
+    <title>The Granios Cafe | Brownies, Shakes &amp; Pizza in Nizamabad, Telangana</title>
+    <meta name="description" content="The Granios Cafe in Pragathi Nagar, Nizamabad — coffee, shakes, fast food, brownies &amp; pizza. Open daily 10:30 AM – 11:00 PM. Vegetarian-friendly. Visit us near Abhyasa School.">
+    <meta name="keywords" content="The Granios Cafe, Nizamabad cafe, Pragathi Nagar restaurant, fast food Nizamabad, shakes, pizza, brownies, Telangana cafe, Vinayak Nagar">
+    <meta name="author" content="The Granios Cafe">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="en-in" href="https://example.com/index.html">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="The granios cafe – Casual Cafe in Nizamabad">
-    <meta property="og:description" content="Visit The granios cafe in Nizamabad for a delightful range of coffee, shakes, and fast food. A perfect spot for quick bites and casual gatherings.">
+    <meta property="og:title" content="The Granios Cafe | Brownies, Shakes &amp; Pizza in Nizamabad">
+    <meta property="og:description" content="Casual cafe for coffee, shakes, fast food &amp; light snacks. Open daily 10:30 AM – 11:00 PM in Pragathi Nagar, Nizamabad.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop">
-    
-    <!-- Canonical -->
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepx6LmeLpURnR7bHtfZbqPC4SVQ3pConr4UAQOsQMalfCNG5ypiWvqTEHjacQY173NcisK1Jm5GCnpnGbEhxBHJxMeY0iQIR7R017FTpm-XEv0AVz1cG42C9GdlOhYB5OhOpG65udy1oEL7=s1360-w1360-h1020-rw">
+    <meta property="og:image:width" content="1360">
+    <meta property="og:image:height" content="1020">
+    <meta property="og:image:alt" content="The Granios cafe storefront at night with illuminated signage">
+    <meta property="og:url" content="https://example.com/index.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Granios Cafe | Nizamabad">
+    <meta name="twitter:description" content="Brownies, shakes, pizza &amp; more. Open daily 10:30 AM – 11:00 PM.">
+    <meta name="twitter:image" content="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepx6LmeLpURnR7bHtfZbqPC4SVQ3pConr4UAQOsQMalfCNG5ypiWvqTEHjacQY173NcisK1Jm5GCnpnGbEhxBHJxMeY0iQIR7R017FTpm-XEv0AVz1cG42C9GdlOhYB5OhOpG65udy1oEL7=s1360-w1360-h1020-rw">
+
     <link rel="canonical" href="https://example.com/index.html">
-    
-    <!-- Hero image preload -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop">
-    
-    <!-- JSON-LD Structured Data -->
+
+    <link rel="preload" as="image" href="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepx6LmeLpURnR7bHtfZbqPC4SVQ3pConr4UAQOsQMalfCNG5ypiWvqTEHjacQY173NcisK1Jm5GCnpnGbEhxBHJxMeY0iQIR7R017FTpm-XEv0AVz1cG42C9GdlOhYB5OhOpG65udy1oEL7=s1360-w1360-h1020-rw" fetchpriority="high">
+
+    <!-- JSON-LD: Restaurant -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Restaurant",
+      "@id": "https://example.com/#restaurant",
       "name": "The granios cafe",
+      "alternateName": "The Granios Cafe",
       "description": "A casual cafe offering a range of coffee, shakes, fast food, and light snacks suitable for quick bites and gatherings.",
+      "image": ["https://lh3.googleusercontent.com/gps-cs-s/AHVAwepx6LmeLpURnR7bHtfZbqPC4SVQ3pConr4UAQOsQMalfCNG5ypiWvqTEHjacQY173NcisK1Jm5GCnpnGbEhxBHJxMeY0iQIR7R017FTpm-XEv0AVz1cG42C9GdlOhYB5OhOpG65udy1oEL7=s1360-w1360-h1020-rw"],
+      "servesCuisine": ["Cafe", "Fast Food", "Beverages"],
+      "priceRange": "₹",
+      "acceptsReservations": false,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "near Abhyasa school, Vinayak Nagar, Pragathi Nagar",
@@ -33,193 +55,473 @@
         "postalCode": "503001",
         "addressCountry": "IN"
       },
-      "servesCuisine": ["Cafe", "Fast Food", "Beverages"],
-      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.6679296,
+        "longitude": 78.1108862
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:30",
+        "closes": "23:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "3.5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "8"
+      },
+      "hasMenu": "https://example.com/index.html#menu",
+      "url": "https://example.com/index.html",
+      "sameAs": ["https://maps.app.goo.gl/ZzmnEXX33gYC1JENA"]
     }
     </script>
-    
-    <!-- Tailwind + Fonts -->
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Bebas Neue"', 'sans-serif'],
+              sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              granios: {
+                red: '#e31837',
+                orange: '#ea580c',
+                slate: '#2d3544',
+                void: '#0c0d10',
+              },
+            },
+            animation: {
+              'gradient': 'gradient-shift 18s ease infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'shimmer': 'shimmer 2.5s ease-in-out infinite',
+            },
+            keyframes: {
+              'gradient-shift': {
+                '0%, 100%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-8px)' },
+              },
+              shimmer: {
+                '0%': { opacity: '0.4' },
+                '50%': { opacity: '1' },
+                '100%': { opacity: '0.4' },
+              },
+            },
+          },
+        },
+      };
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-        }
+      :root {
+        --bg-deep: #0c0d10;
+        --surface: #14181f;
+        --border: rgba(255, 255, 255, 0.08);
+        --red: #e31837;
+        --orange: #ea580c;
+        --cream: #e8e4dc;
+      }
+
+      body {
+        font-family: 'DM Sans', system-ui, sans-serif;
+        background: var(--bg-deep);
+        color: var(--cream);
+      }
+
+      .font-display {
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 0.02em;
+      }
+
+      .mesh-bg {
+        background:
+          radial-gradient(ellipse 80% 50% at 20% -20%, rgba(227, 24, 55, 0.15), transparent),
+          radial-gradient(ellipse 60% 40% at 100% 0%, rgba(234, 88, 12, 0.12), transparent),
+          radial-gradient(ellipse 50% 30% at 50% 100%, rgba(45, 53, 68, 0.5), transparent),
+          var(--bg-deep);
+      }
+
+      .hero-img-wrap {
+        animation: hero-zoom 28s ease-in-out infinite alternate;
+      }
+
+      @keyframes hero-zoom {
+        from { transform: scale(1.02); }
+        to { transform: scale(1.08); }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .stagger-children > * {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.55s ease, transform 0.55s ease;
+      }
+
+      .stagger-children.is-visible > *:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: translateY(0); }
+      .stagger-children.is-visible > *:nth-child(2) { transition-delay: 0.12s; opacity: 1; transform: translateY(0); }
+      .stagger-children.is-visible > *:nth-child(3) { transition-delay: 0.19s; opacity: 1; transform: translateY(0); }
+      .stagger-children.is-visible > *:nth-child(4) { transition-delay: 0.26s; opacity: 1; transform: translateY(0); }
+      .stagger-children.is-visible > *:nth-child(5) { transition-delay: 0.33s; opacity: 1; transform: translateY(0); }
+      .stagger-children.is-visible > *:nth-child(6) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+
+      .line-accent {
+        background: linear-gradient(90deg, var(--red), var(--orange));
+        height: 3px;
+        border-radius: 999px;
+        transform-origin: left;
+        animation: line-grow 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        transform: scaleX(0);
+      }
+
+      .reveal.is-visible .line-accent {
+        animation: line-grow 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      @keyframes line-grow {
+        to { transform: scaleX(1); }
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--red) 0%, #b81228 100%);
+        box-shadow: 0 4px 24px rgba(227, 24, 55, 0.35);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(227, 24, 55, 0.45);
+      }
+
+      .glass-header {
+        background: rgba(12, 13, 16, 0.75);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .noise::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.035;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        z-index: 1;
+      }
     </style>
 </head>
-<body class="bg-stone-50 text-stone-800">
+<body class="mesh-bg noise min-h-screen antialiased">
 
-    <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-stone-900">The granios cafe</a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#home" class="text-stone-600 hover:text-amber-800 transition">Home</a>
-                <a href="#about" class="text-stone-600 hover:text-amber-800 transition">About</a>
-                <a href="#menu" class="text-stone-600 hover:text-amber-800 transition">Menu</a>
-                <a href="#contact" class="text-stone-600 hover:text-amber-800 transition">Contact</a>
+    <header class="glass-header fixed top-0 left-0 right-0 z-50 transition-shadow duration-300" id="site-header">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="font-display text-2xl sm:text-3xl tracking-wide text-white">
+                The <span class="text-granios-red">Granios</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-10 text-sm font-medium text-stone-300">
+                <a href="#home" class="hover:text-white transition-colors relative group">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-granios-red group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#about" class="hover:text-white transition-colors relative group">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-granios-red group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#menu" class="hover:text-white transition-colors relative group">
+                    Menu
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-granios-red group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#visit" class="hover:text-white transition-colors relative group">
+                    Visit
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-granios-red group-hover:w-full transition-all duration-300"></span>
+                </a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden">
-                <i data-lucide="menu"></i>
+            <button type="button" id="mobile-menu-button" class="md:hidden p-2 rounded-lg border border-white/10 text-white hover:bg-white/5" aria-expanded="false" aria-controls="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
             </button>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#home" class="block py-2 text-stone-600 hover:text-amber-800">Home</a>
-            <a href="#about" class="block py-2 text-stone-600 hover:text-amber-800">About</a>
-            <a href="#menu" class="block py-2 text-stone-600 hover:text-amber-800">Menu</a>
-            <a href="#contact" class="block py-2 text-stone-600 hover:text-amber-800">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-[#0c0d10]/95 px-5 py-4 space-y-3">
+            <a href="#home" class="block py-2 text-stone-300 hover:text-white">Home</a>
+            <a href="#about" class="block py-2 text-stone-300 hover:text-white">About</a>
+            <a href="#menu" class="block py-2 text-stone-300 hover:text-white">Menu</a>
+            <a href="#visit" class="block py-2 text-stone-300 hover:text-white">Visit</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="relative h-screen min-h-[600px] flex items-center justify-center text-white">
-            <div class="absolute inset-0 bg-black/50 z-10"></div>
-            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop" 
-                 alt="Cozy interior of The granios cafe"
-                 class="absolute inset-0 w-full h-full object-cover"
-                 loading="eager" fetchpriority="high" decoding="async"
-                 width="2047" height="1365">
-            <div class="relative z-20 text-center px-4">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to The granios cafe</h1>
-                <p class="text-xl md:text-2xl mb-8">Your perfect spot for coffee, shakes & quick bites in Nizamabad.</p>
-                <a href="#menu" class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105">View Our Menu</a>
+        <!-- Hero -->
+        <section id="home" class="relative min-h-screen flex items-end sm:items-center pt-24 pb-16 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 hero-img-wrap">
+                    <img
+                        src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepx6LmeLpURnR7bHtfZbqPC4SVQ3pConr4UAQOsQMalfCNG5ypiWvqTEHjacQY173NcisK1Jm5GCnpnGbEhxBHJxMeY0iQIR7R017FTpm-XEv0AVz1cG42C9GdlOhYB5OhOpG65udy1oEL7=s1360-w1360-h1020-rw"
+                        alt="The Granios cafe at night — illuminated signage: Brownies, Shakes, Pizza"
+                        class="w-full h-full object-cover object-center min-h-[100vh]"
+                        width="1360"
+                        height="1020"
+                        fetchpriority="high"
+                        decoding="async"
+                    />
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0c0d10] via-[#0c0d10]/75 to-[#0c0d10]/40"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0c0d10]/90 via-transparent to-[#0c0d10]/50"></div>
+            </div>
+
+            <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 w-full">
+                <div class="max-w-3xl reveal is-visible" id="hero-content">
+                    <p class="text-granios-orange font-semibold text-sm uppercase tracking-[0.25em] mb-4">Nizamabad · Pragathi Nagar</p>
+                    <h1 class="font-display text-6xl sm:text-8xl md:text-9xl text-white leading-[0.9] mb-2">
+                        <span class="block text-4xl sm:text-5xl md:text-6xl font-normal tracking-[0.3em] text-stone-400 mb-1">The</span>
+                        <span class="inline-flex flex-wrap items-baseline gap-0">
+                            <span>GRANI</span><span class="text-granios-red">O</span><span>S</span>
+                        </span>
+                    </h1>
+                    <p class="font-display text-xl sm:text-2xl md:text-3xl text-stone-300 tracking-[0.15em] mt-4 mb-8">
+                        Brownies <span class="text-granios-red">|</span> Shakes <span class="text-granios-red">|</span> Pizza
+                    </p>
+                    <p class="text-lg text-stone-400 max-w-xl mb-10 leading-relaxed">
+                        Your spot for coffee, shakes, fast food &amp; light snacks — quick bites and easy gatherings in a warm, casual setting.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#menu" class="btn-primary inline-flex items-center justify-center px-8 py-3.5 rounded-full text-white font-semibold text-sm uppercase tracking-wider">
+                            Explore menu
+                        </a>
+                        <a href="https://maps.app.goo.gl/ZzmnEXX33gYC1JENA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-white/20 text-white font-semibold text-sm uppercase tracking-wider hover:bg-white/5 transition-colors">
+                            Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float hidden sm:block" aria-hidden="true">
+                <div class="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center pt-2">
+                    <div class="w-1 h-2 bg-white/60 rounded-full animate-shimmer"></div>
+                </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-20 bg-white">
-            <div class="container mx-auto px-6 text-center max-w-3xl">
-                <h2 class="text-4xl font-bold text-stone-900 mb-6">A Cozy Corner in Nizamabad</h2>
-                <p class="text-lg text-stone-600 leading-relaxed">
-                    The granios cafe is a casual and friendly spot offering a delightful range of coffee, refreshing shakes, delicious fast food, and light snacks. It's the perfect place for quick bites, catching up with friends, or simply enjoying a quiet moment.
-                </p>
+        <!-- Quick stats -->
+        <section class="relative z-10 border-y border-white/10 bg-[#0f1116]/80">
+            <div class="max-w-6xl mx-auto px-5 sm:px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 stagger-children" id="stats-row">
+                <div class="text-center md:text-left">
+                    <p class="font-display text-4xl text-white">3.5</p>
+                    <p class="text-xs uppercase tracking-widest text-stone-500 mt-1">Google rating</p>
+                    <p class="text-sm text-stone-400 mt-0.5">8 reviews</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="font-display text-4xl text-white">10:30</p>
+                    <p class="text-xs uppercase tracking-widest text-stone-500 mt-1">Opens daily</p>
+                    <p class="text-sm text-stone-400 mt-0.5">Last orders by 11:00 PM</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="font-display text-4xl text-granios-orange">₹</p>
+                    <p class="text-xs uppercase tracking-widest text-stone-500 mt-1">Budget-friendly</p>
+                    <p class="text-sm text-stone-400 mt-0.5">Great value bites</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="font-display text-4xl text-white">Walk-in</p>
+                    <p class="text-xs uppercase tracking-widest text-stone-500 mt-1">Reservations</p>
+                    <p class="text-sm text-stone-400 mt-0.5">Phone enquiries welcome</p>
+                </div>
             </div>
         </section>
 
-        <!-- Menu Section -->
-        <section id="menu" class="py-20 bg-stone-50">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center text-stone-900 mb-12">Our Menu</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Beverages -->
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-bold mb-4 text-amber-800">Beverages</h3>
-                        <ul class="space-y-2 text-stone-600">
-                            <li class="flex justify-between"><span>Espresso</span> <span>₹120</span></li>
-                            <li class="flex justify-between"><span>Cappuccino</span> <span>₹150</span></li>
-                            <li class="flex justify-between"><span>Iced Latte</span> <span>₹180</span></li>
-                            <li class="flex justify-between"><span>Chocolate Shake</span> <span>₹200</span></li>
-                            <li class="flex justify-between"><span>Fresh Lime Soda</span> <span>₹100</span></li>
-                        </ul>
+        <!-- About -->
+        <section id="about" class="py-24 md:py-32 relative">
+            <div class="max-w-6xl mx-auto px-5 sm:px-6">
+                <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+                    <div class="reveal">
+                        <div class="w-20 line-accent mb-8"></div>
+                        <h2 class="font-display text-5xl sm:text-6xl text-white mb-6">Heaven for foodies</h2>
+                        <p class="text-lg text-stone-400 leading-relaxed mb-8">
+                            A casual cafe offering coffee, shakes, fast food, and light snacks — perfect for quick bites, hangouts, and relaxed evenings. We keep things easy: good food, warm lights, and a welcoming vibe inspired by our own storefront glow.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-stone-300">Cafe</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-stone-300">Fast Food</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-stone-300">Beverages</span>
+                        </div>
                     </div>
-                    <!-- Fast Food -->
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-bold mb-4 text-amber-800">Fast Food</h3>
-                        <ul class="space-y-2 text-stone-600">
-                            <li class="flex justify-between"><span>Veggie Burger</span> <span>₹180</span></li>
-                            <li class="flex justify-between"><span>Chicken Sandwich</span> <span>₹220</span></li>
-                            <li class="flex justify-between"><span>French Fries</span> <span>₹130</span></li>
-                            <li class="flex justify-between"><span>Margherita Pizza</span> <span>₹250</span></li>
-                            <li class="flex justify-between"><span>Garlic Bread</span> <span>₹140</span></li>
-                        </ul>
-                    </div>
-                    <!-- Light Snacks -->
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-bold mb-4 text-amber-800">Light Snacks</h3>
-                        <ul class="space-y-2 text-stone-600">
-                            <li class="flex justify-between"><span>Samosa (2 pcs)</span> <span>₹80</span></li>
-                            <li class="flex justify-between"><span>Muffin</span> <span>₹100</span></li>
-                            <li class="flex justify-between"><span>Chilli Cheese Toast</span> <span>₹160</span></li>
-                            <li class="flex justify-between"><span>Cookies</span> <span>₹90</span></li>
-                            <li class="flex justify-between"><span>Pancakes</span> <span>₹190</span></li>
-                        </ul>
+                    <div class="reveal space-y-6">
+                        <div class="rounded-2xl border border-white/10 bg-[#14181f] p-8 hover:border-granios-red/30 transition-colors duration-500">
+                            <h3 class="font-semibold text-white mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-granios-orange"></span>
+                                Dietary notes
+                            </h3>
+                            <ul class="space-y-2 text-stone-400 text-sm">
+                                <li>Vegetarian-friendly options</li>
+                                <li>Shellfish-free &amp; egg-free choices available</li>
+                            </ul>
+                        </div>
+                        <div class="rounded-2xl border border-white/10 bg-[#14181f] p-8 hover:border-granios-red/30 transition-colors duration-500">
+                            <h3 class="font-semibold text-white mb-3">Hours</h3>
+                            <p class="text-stone-400 text-sm leading-relaxed">Monday — Sunday: <strong class="text-white">10:30 AM – 11:00 PM</strong></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center text-stone-900 mb-12">Get In Touch</h2>
-                <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4">Visit Us</h3>
-                        <p class="text-lg text-stone-600 mb-4 flex items-start">
-                            <i data-lucide="map-pin" class="w-6 h-6 mr-3 mt-1 text-amber-700 flex-shrink-0"></i>
-                            <span>near Abhyasa school, Vinayak Nagar, Pragathi Nagar, Nizamabad, Telangana 503001, India</span>
-                        </p>
-                        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-md mt-6">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8236000000003!2d78.1000000!3d18.6700000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDQwJzEyLjAiTiA3OMKwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1625846400000!5m2!1sen!2sin" 
-                                width="600" 
-                                height="450" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade"
-                                title="Map showing location of The granios cafe">
-                            </iframe>
+        <!-- Menu -->
+        <section id="menu" class="py-24 md:py-32 bg-[#0a0b0e] border-t border-white/5">
+            <div class="max-w-6xl mx-auto px-5 sm:px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                    <div class="w-20 line-accent mx-auto mb-8"></div>
+                    <h2 class="font-display text-5xl sm:text-6xl text-white mb-4">Menu highlights</h2>
+                    <p class="text-stone-400">Sample picks — ask our team for today&apos;s specials when you visit.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6 stagger-children" id="menu-grid">
+                    <article class="group rounded-2xl border border-white/10 bg-gradient-to-b from-[#14181f] to-[#0c0d10] p-8 hover:border-granios-red/40 hover:shadow-[0_0_40px_-10px_rgba(227,24,55,0.4)] transition-all duration-500">
+                        <h3 class="font-display text-3xl text-granios-orange mb-6">Beverages</h3>
+                        <ul class="space-y-3 text-stone-400 text-sm">
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Espresso</span><span class="text-stone-500">₹120</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Cappuccino</span><span class="text-stone-500">₹150</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Iced Latte</span><span class="text-stone-500">₹180</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Chocolate Shake</span><span class="text-stone-500">₹200</span></li>
+                            <li class="flex justify-between gap-4"><span>Fresh Lime Soda</span><span class="text-stone-500">₹100</span></li>
+                        </ul>
+                    </article>
+                    <article class="group rounded-2xl border border-white/10 bg-gradient-to-b from-[#14181f] to-[#0c0d10] p-8 hover:border-granios-red/40 hover:shadow-[0_0_40px_-10px_rgba(227,24,55,0.4)] transition-all duration-500">
+                        <h3 class="font-display text-3xl text-granios-red mb-6">Fast food</h3>
+                        <ul class="space-y-3 text-stone-400 text-sm">
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Veggie Burger</span><span class="text-stone-500">₹180</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Chicken Sandwich</span><span class="text-stone-500">₹220</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>French Fries</span><span class="text-stone-500">₹130</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Margherita Pizza</span><span class="text-stone-500">₹250</span></li>
+                            <li class="flex justify-between gap-4"><span>Garlic Bread</span><span class="text-stone-500">₹140</span></li>
+                        </ul>
+                    </article>
+                    <article class="group rounded-2xl border border-white/10 bg-gradient-to-b from-[#14181f] to-[#0c0d10] p-8 hover:border-granios-red/40 hover:shadow-[0_0_40px_-10px_rgba(227,24,55,0.4)] transition-all duration-500">
+                        <h3 class="font-display text-3xl text-amber-700 mb-6">Snacks</h3>
+                        <ul class="space-y-3 text-stone-400 text-sm">
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Samosa (2 pcs)</span><span class="text-stone-500">₹80</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Brownies</span><span class="text-stone-500">₹100</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Chilli Cheese Toast</span><span class="text-stone-500">₹160</span></li>
+                            <li class="flex justify-between gap-4 border-b border-white/5 pb-3"><span>Cookies</span><span class="text-stone-500">₹90</span></li>
+                            <li class="flex justify-between gap-4"><span>Pancakes</span><span class="text-stone-500">₹190</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit -->
+        <section id="visit" class="py-24 md:py-32 relative">
+            <div class="max-w-6xl mx-auto px-5 sm:px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <div class="reveal">
+                        <div class="w-20 line-accent mb-8"></div>
+                        <h2 class="font-display text-5xl sm:text-6xl text-white mb-6">Visit us</h2>
+                        <address class="not-italic text-stone-400 text-lg leading-relaxed mb-8">
+                            near Abhyasa school, Vinayak Nagar, Pragathi Nagar,<br>
+                            Nizamabad, Telangana 503001, India
+                        </address>
+                        <div class="flex flex-wrap gap-4 mb-10">
+                            <a href="https://maps.app.goo.gl/ZzmnEXX33gYC1JENA" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold text-sm">
+                                Open in Google Maps
+                            </a>
                         </div>
+                        <p class="text-sm text-stone-500">
+                            Phone &amp; website links will appear here when available. We&apos;re <strong class="text-stone-400">operational</strong> — walk in during opening hours.
+                        </p>
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4">Send a Message</h3>
-                        <form id="contact-form" class="space-y-4">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-stone-700">Full Name</label>
-                                <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-stone-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-stone-700">Email Address</label>
-                                <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-stone-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
-                            </div>
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-stone-700">Message</label>
-                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 bg-white border border-stone-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500"></textarea>
-                            </div>
-                            <div class="text-center p-4 bg-red-100 text-red-700 rounded-md">
-                                <p>This form is temporarily unavailable. Please visit us in person!</p>
-                            </div>
-                            <button type="submit" disabled class="w-full bg-amber-700 text-white font-bold py-3 px-6 rounded-md transition-colors disabled:bg-stone-400 disabled:cursor-not-allowed">
-                                Send Message
-                            </button>
-                        </form>
+                    <div class="reveal rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50 aspect-[4/3] lg:aspect-auto lg:min-h-[420px]">
+                        <iframe
+                            title="Map: The Granios Cafe, Nizamabad"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.912332582275!2d78.10831127619157!3d18.66792958245451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcddb0ae2cb6a29%3A0x8c5017d182771d1b!2sThe%20granios%20cafe!5e0!3m2!1sen!2sin!4v1774692014465!5m2!1sen!2sin"
+                            width="600"
+                            height="450"
+                            class="w-full h-full min-h-[320px] lg:min-h-[420px] border-0 grayscale-[20%] contrast-[1.05]"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-stone-900 text-white py-10">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-lg font-bold mb-2">The granios cafe</p>
-            <p class="text-stone-400">© <span id="year"></span> The granios cafe. All Rights Reserved.</p>
+    <footer class="border-t border-white/10 bg-[#08090c] py-12">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="font-display text-2xl text-white">The <span class="text-granios-red">Granios</span> Cafe</p>
+                <p class="text-stone-500 text-sm mt-2">© <span id="year"></span> The Granios Cafe. All rights reserved.</p>
+            </div>
+            <div class="flex gap-6 text-sm text-stone-500">
+                <a href="#home" class="hover:text-white transition-colors">Top</a>
+                <a href="https://maps.app.goo.gl/ZzmnEXX33gYC1JENA" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Google Maps</a>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        lucide.createIcons();
+      (function () {
+        var header = document.getElementById('site-header');
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 40) {
+            header.classList.add('shadow-lg', 'shadow-black/40');
+          } else {
+            header.classList.remove('shadow-lg', 'shadow-black/40');
+          }
+        }, { passive: true });
+
+        var mobileBtn = document.getElementById('mobile-menu-button');
+        var mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', function () {
+          var open = mobileMenu.classList.toggle('hidden');
+          mobileBtn.setAttribute('aria-expanded', String(!open));
         });
 
-        // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        if (reduceMotion) {
+          document.querySelectorAll('.hero-img-wrap').forEach(function (el) {
+            el.style.animation = 'none';
+          });
+          return;
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+              }
+            });
+          },
+          { root: null, rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+        );
+
+        document.querySelectorAll('.reveal, .stagger-children').forEach(function (el) {
+          observer.observe(el);
+        });
+      })();
     </script>
 </body>
 </html>
