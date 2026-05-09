@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://staging.kora-5c68131e-a353-4e48-9d83-b61b8cccf374.pages.dev/sitemap.xml
+Sitemap: https://thegranioscafe.com/sitemap.xml
