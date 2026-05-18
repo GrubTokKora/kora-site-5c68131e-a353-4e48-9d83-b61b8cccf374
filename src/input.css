@@ -7,8 +7,8 @@
   --color-granios-orange: #ea580c;
   --color-granios-slate: #2d3544;
   --color-granios-void: #0c0d10;
-  --font-family-display: "Bebas Neue", sans-serif;
-  --font-family-sans: "DM Sans", system-ui, sans-serif;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
   --animate-gradient: gradient-shift 18s ease infinite;
   --animate-float: float 6s ease-in-out infinite;
   --animate-shimmer: shimmer 2.5s ease-in-out infinite;
