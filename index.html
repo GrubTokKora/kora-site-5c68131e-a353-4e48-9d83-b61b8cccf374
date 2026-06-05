@@ -97,6 +97,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "https://maps.app.goo.gl/ZzmnEXX33gYC1JENA"
   ]
 }</script>
+<!-- JSON-LD: FAQ -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are your opening hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We are open every day of the week, from Monday to Sunday, from 10:30 AM to 11:00 PM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer vegetarian options?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we have a wide variety of vegetarian-friendly options across our menu, including starters, burgers, pizzas, and sandwiches. Look for the 'Veg' items on our menu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you take reservations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We primarily operate on a walk-in basis. For any specific enquiries, you can call us at 7075170295."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are your most popular items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our customers love our signature Brownies, a wide range of thick Shakes, and our delicious Pizzas. The Chicken Bucket and our special burgers are also very popular."
+      }
+    }
+  ]
+}</script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
@@ -244,6 +283,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
       z-index: 1;
     }
+    .rotate-180 {
+      transform: rotate(180deg);
+    }
   </style>
 </head>
 <body class="mesh-bg noise min-h-screen antialiased">
@@ -269,6 +311,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           Visit
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-granios-red group-hover:w-full transition-all duration-300"></span>
 </a>
+<a class="hover:text-white transition-colors relative group" href="#faq">
+          FAQ
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-granios-red group-hover:w-full transition-all duration-300"></span>
+</a>
 </nav>
 <button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden p-2 rounded-lg border border-white/10 text-white hover:bg-white/5" id="mobile-menu-button" type="button">
 <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -281,6 +327,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a class="block py-2 text-stone-300 hover:text-white" href="#about">About</a>
 <a class="block py-2 text-stone-300 hover:text-white" href="#menu">Menu</a>
 <a class="block py-2 text-stone-300 hover:text-white" href="#visit">Visit</a>
+<a class="block py-2 text-stone-300 hover:text-white" href="#faq">FAQ</a>
 </div>
 </header>
 <main>
@@ -297,15 +344,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="max-w-3xl reveal is-visible" id="hero-content">
 <p class="text-granios-orange font-semibold text-sm uppercase tracking-[0.25em] mb-4">Nizamabad · Pragathi
             Nagar</p>
-<h1 class="font-display text-6xl sm:text-8xl md:text-9xl text-white leading-[0.9] mb-2">
+<h1 class="font-display text-6xl sm:text-8xl md:text-9xl text-white leading-[0.9] mb-8">
 <span class="block text-4xl sm:text-5xl md:text-6xl font-normal tracking-[0.3em] text-stone-400 mb-1">The</span>
 <span class="inline-flex flex-wrap items-baseline gap-0">
 <span>GRANI</span><span class="text-granios-red">O</span><span>S</span>
 </span>
+<span class="block font-display text-xl sm:text-2xl md:text-3xl text-stone-300 tracking-[0.15em] mt-4">
+        Brownies <span class="text-granios-red">|</span> Shakes <span class="text-granios-red">|</span> Pizza
+    </span>
 </h1>
-<p class="font-display text-xl sm:text-2xl md:text-3xl text-stone-300 tracking-[0.15em] mt-4 mb-8">
-            Brownies <span class="text-granios-red">|</span> Shakes <span class="text-granios-red">|</span> Pizza
-          </p>
 <p class="text-lg text-stone-400 max-w-xl mb-10 leading-relaxed">
             Your spot for coffee, shakes, fast food &amp; light snacks — quick bites and easy gatherings in a warm,
             casual setting.
@@ -869,6 +916,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 </section>
+<!-- FAQ -->
+<section class="py-24 md:py-32 bg-[#0a0b0e] border-t border-white/5" id="faq">
+<div class="max-w-3xl mx-auto px-5 sm:px-6">
+<div class="text-center mb-16 reveal">
+<div class="w-20 line-accent mx-auto mb-8"></div>
+<h2 class="font-display text-5xl sm:text-6xl text-white mb-4">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-4" id="faq-accordion">
+<div class="border border-white/10 rounded-lg bg-[#14181f] overflow-hidden reveal">
+<button class="w-full flex justify-between items-center text-left p-6 font-semibold text-white" type="button">
+<span>What are your opening hours?</span>
+<svg class="w-5 h-5 text-stone-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="px-6 pb-6 text-stone-400 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+<p>We are open every day of the week, from Monday to Sunday, from 10:30 AM to 11:00 PM.</p>
+</div>
+</div>
+<div class="border border-white/10 rounded-lg bg-[#14181f] overflow-hidden reveal">
+<button class="w-full flex justify-between items-center text-left p-6 font-semibold text-white" type="button">
+<span>Do you offer vegetarian options?</span>
+<svg class="w-5 h-5 text-stone-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="px-6 pb-6 text-stone-400 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+<p>Yes, we have a wide variety of vegetarian-friendly options across our menu, including starters, burgers, pizzas, and sandwiches. Look for the 'Veg' items on our menu.</p>
+</div>
+</div>
+<div class="border border-white/10 rounded-lg bg-[#14181f] overflow-hidden reveal">
+<button class="w-full flex justify-between items-center text-left p-6 font-semibold text-white" type="button">
+<span>Do you take reservations?</span>
+<svg class="w-5 h-5 text-stone-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="px-6 pb-6 text-stone-400 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+<p>We primarily operate on a walk-in basis. For any specific enquiries, you can call us at <a class="text-granios-orange" href="tel:7075170295">7075170295</a>.</p>
+</div>
+</div>
+<div class="border border-white/10 rounded-lg bg-[#14181f] overflow-hidden reveal">
+<button class="w-full flex justify-between items-center text-left p-6 font-semibold text-white" type="button">
+<span>What are your most popular items?</span>
+<svg class="w-5 h-5 text-stone-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="px-6 pb-6 text-stone-400 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+<p>Our customers love our signature Brownies, a wide range of thick Shakes, and our delicious Pizzas. The Chicken Bucket and our special burgers are also very popular.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 <!-- Visit -->
 <section class="py-24 md:py-32 relative" id="visit">
 <div class="max-w-6xl mx-auto px-5 sm:px-6">
@@ -951,6 +1053,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       document.querySelectorAll('.reveal, .stagger-children').forEach(function (el) {
         observer.observe(el);
       });
+
+      // FAQ Accordion
+      var accordion = document.getElementById('faq-accordion');
+      if (accordion) {
+        var buttons = accordion.querySelectorAll('button');
+        buttons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var content = this.nextElementSibling;
+            var icon = this.querySelector('svg');
+            var isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+            // Close all other items
+            buttons.forEach(function (otherButton) {
+              if (otherButton !== button) {
+                otherButton.nextElementSibling.style.maxHeight = null;
+                otherButton.querySelector('svg').classList.remove('rotate-180');
+              }
+            });
+
+            if (isExpanded) {
+              content.style.maxHeight = null;
+              icon.classList.remove('rotate-180');
+            } else {
+              content.style.maxHeight = content.scrollHeight + 'px';
+              icon.classList.add('rotate-180');
+            }
+          });
+        });
+      }
     })();
   </script>
 <script>
