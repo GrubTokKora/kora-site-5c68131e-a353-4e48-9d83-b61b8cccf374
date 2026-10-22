@@ -29,3 +29,217 @@
   50% { opacity: 1; }
   100% { opacity: 0.4; }
 }
+
+/* Site styles (formerly the <style> block in index.html). Kept outside @layer, in their original order,
+   so they win over Tailwind's preflight and utilities exactly as the inline block did, and so the menu
+   rules beat Kora's unlayered base menu style. */
+:root {
+  --bg-deep: #0c0d10;
+  --surface: #14181f;
+  --border: rgba(255, 255, 255, 0.08);
+  --red: #e31837;
+  --orange: #ea580c;
+  --cream: #e8e4dc;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg-deep);
+  color: var(--cream);
+}
+
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.mesh-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% -20%, rgba(227, 24, 55, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(234, 88, 12, 0.12), transparent),
+    radial-gradient(ellipse 50% 30% at 50% 100%, rgba(45, 53, 68, 0.5), transparent),
+    var(--bg-deep);
+}
+
+.hero-img-wrap {
+  animation: hero-zoom 28s ease-in-out infinite alternate;
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.02);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children>* {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.stagger-children.is-visible>*:nth-child(1) {
+  transition-delay: 0.05s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible>*:nth-child(2) {
+  transition-delay: 0.12s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible>*:nth-child(3) {
+  transition-delay: 0.19s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible>*:nth-child(4) {
+  transition-delay: 0.26s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible>*:nth-child(5) {
+  transition-delay: 0.33s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.is-visible>*:nth-child(6) {
+  transition-delay: 0.4s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.line-accent {
+  background: linear-gradient(90deg, var(--red), var(--orange));
+  height: 3px;
+  border-radius: 999px;
+  transform-origin: left;
+  animation: line-grow 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transform: scaleX(0);
+}
+
+.reveal.is-visible .line-accent {
+  animation: line-grow 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes line-grow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--red) 0%, #b81228 100%);
+  box-shadow: 0 4px 24px rgba(227, 24, 55, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(227, 24, 55, 0.45);
+}
+
+.glass-header {
+  background: rgba(12, 13, 16, 0.75);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.noise::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 1;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Menu: Kora draws the menu from the site's menu data into the kora:data:menu region in #menu-content, one
+   menu per category ("columns" layout, so the pizza and shake size tables line up). These rules give it the
+   look of the hand-written menu; the sidebar and mobile category list are built from it by index.html. */
+#menu-content .kora-menu .kora-menu__switcher,
+#menu-content .kora-menu .kora-menu__nav { display: none; }
+#menu-content .kora-menu .kora-menu__menu { margin: 0 0 4rem; scroll-margin-top: 0; }
+#menu-content .kora-menu .kora-menu__menu:last-of-type { margin-bottom: 0; }
+#menu-content .kora-menu .kora-menu__menu-title {
+  margin: 0 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e3183733;
+  border-bottom: 2px solid color-mix(in oklab, #e31837 20%, transparent);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  color: #ea580c;
+}
+#menu-content .kora-menu .kora-menu__section { margin: 0 0 2rem; scroll-margin-top: 0; }
+#menu-content .kora-menu .kora-menu__section:last-of-type { margin-bottom: 0; }
+#menu-content .kora-menu .kora-menu__section-title { margin: 0 0 1rem; font-family: inherit; font-size: 1.125rem; line-height: 1.75rem; font-weight: 600; color: #fff; }
+#menu-content .kora-menu .kora-menu__items { gap: 1rem 2rem; font-size: 0.875rem; line-height: 1.25rem; color: oklch(70.9% .01 56.259); }
+@media (min-width: 48rem) {
+  #menu-content .kora-menu .kora-menu__items { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+#menu-content .kora-menu .kora-menu__item { display: block; }
+#menu-content .kora-menu .kora-menu__item-head { display: flex; justify-content: space-between; align-items: normal; gap: 0.5rem; }
+#menu-content .kora-menu .kora-menu__item-name { margin: 0; font-family: inherit; font-size: inherit; line-height: inherit; font-weight: inherit; color: inherit; }
+#menu-content .kora-menu .kora-menu__item-price,
+#menu-content .kora-menu .kora-menu__price-value { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-weight: 400; color: oklch(55.3% .013 58.071); white-space: normal; }
+#menu-content .kora-menu .kora-menu__item-desc { margin: 0.25rem 0 0; font-size: 0.75rem; line-height: 1rem; color: oklch(55.3% .013 58.071); opacity: 1; }
+#menu-content .kora-menu .kora-menu__tags { display: none; }
+/* Size tables (a section whose dishes have labelled prices): Item | Medium | Large, three equal columns,
+   a heading row and a rule, "—" where a size isn't offered. */
+#menu-content .kora-menu .kora-menu__section[style*="--km-cols"] .kora-menu__col-labels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1rem;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #ffffff1a;
+  border-bottom: 1px solid color-mix(in oklab, #fff 10%, transparent);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  opacity: 1;
+}
+#menu-content .kora-menu .kora-menu__section[style*="--km-cols"] .kora-menu__col-labels span:first-child::before { content: "Item"; }
+#menu-content .kora-menu .kora-menu__section[style*="--km-cols"] .kora-menu__col-labels span:not(:first-child) { text-align: right; }
+#menu-content .kora-menu .kora-menu__section[style*="--km-cols"] .kora-menu__items { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
+#menu-content .kora-menu .kora-menu__section[style*="--km-cols"] .kora-menu__item-head { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 1rem; }
+#menu-content .kora-menu .kora-menu__section[style*="--km-cols"] .kora-menu__prices li { text-align: right; }
+#menu-content .kora-menu .kora-menu__price-value:empty::before { content: "—"; }
